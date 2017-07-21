@@ -15,7 +15,22 @@ Following dependencies from this site are involved:
 			<artifactId>actor4j-core</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+		<dependency>
+   			<groupId>actor4j-web-utils</groupId>
+   			<artifactId>actor4j-web-utils</artifactId>
+   			<version>1.0.0</version>
+   		</dependency>
+		<dependency>
+   			<groupId>actor4j-web-rest-server</groupId>
+   			<artifactId>actor4j-web-rest-server</artifactId>
+   			<version>1.0.0</version>
+   		</dependency>
+   		<dependency>
+   			<groupId>actor4j-web-websocket</groupId>
+   			<artifactId>actor4j-web-websocket</artifactId>
+   			<version>1.0.0</version>
+   		</dependency>
 ```
 
-Page to be updated 07/14/2017
+Page to be updated 07/22/2017
 
