@@ -15,7 +15,7 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   	<modelVersion>4.0.0</modelVersion>
-  	<groupId>actor4j-web-template</groupId>
+  	<groupId>cloud.actor4j</groupId>
   	<artifactId>actor4j-web-template</artifactId>
   	<version>1.0.0</version>
   	
@@ -27,22 +27,22 @@
 	
 	<dependencies>
 		<dependency>
-			<groupId>actor4j-core</groupId>
+			<groupId>cloud.actor4j</groupId>
 			<artifactId>actor4j-core</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
-   			<groupId>actor4j-web-utils</groupId>
+   			<groupId>actor4j-web</groupId>
    			<artifactId>actor4j-web-utils</artifactId>
    			<version>1.0.0</version>
    		</dependency>
 		<dependency>
-   			<groupId>actor4j-web-rest-server</groupId>
+   			<groupId>actor4j-web</groupId>
    			<artifactId>actor4j-web-rest-server</artifactId>
    			<version>1.0.0</version>
    		</dependency>
    		<dependency>
-   			<groupId>actor4j-web-websocket</groupId>
+   			<groupId>actor4j-web</groupId>
    			<artifactId>actor4j-web-websocket</artifactId>
    			<version>1.0.0</version>
    		</dependency>

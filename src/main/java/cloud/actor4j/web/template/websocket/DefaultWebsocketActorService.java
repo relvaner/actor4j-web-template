@@ -13,19 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package actor4j.web.template.rest;
+package cloud.actor4j.web.template.websocket;
 
-import javax.ws.rs.ApplicationPath;
+import javax.websocket.server.ServerEndpointConfig.Configurator;
 
-import actor4j.core.ActorService;
-import actor4j.web.rest.server.RESTActorService;
-import actor4j.web.template.startup.DefaultActorService;
-
-
-@ApplicationPath("api")
-public class DefaultRESTActorService extends RESTActorService {
+public class DefaultWebsocketActorService extends Configurator {
+	protected static DefaultActorServerEndpoint serverEndpoint  = new DefaultActorServerEndpoint();
+	
+    @SuppressWarnings("unchecked")
 	@Override
-	public ActorService getService() {
-		return DefaultActorService.getService();
-	}
+    public <T> T getEndpointInstance(Class<T> endpointClass) throws InstantiationException {
+        return (T)serverEndpoint;
+    }
 }

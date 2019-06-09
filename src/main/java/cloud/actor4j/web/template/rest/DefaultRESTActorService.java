@@ -13,16 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package actor4j.web.template.controller;
+package cloud.actor4j.web.template.rest;
 
-import actor4j.web.template.startup.DefaultActorService;
+import javax.ws.rs.ApplicationPath;
 
-public class DefaultActorServiceController {
-	public String isOnline() {
-		return DefaultActorService.getService()!=null ? "is" : "is not";
-	}
-	
-	public String getName() {
-		return DefaultActorService.getService()!=null ? DefaultActorService.getService().getServiceNodeName() : "not available";
+import cloud.actor4j.core.ActorService;
+import cloud.actor4j.web.rest.server.RESTActorService;
+import cloud.actor4j.web.template.startup.DefaultActorService;
+
+
+@ApplicationPath("api")
+public class DefaultRESTActorService extends RESTActorService {
+	@Override
+	public ActorService getService() {
+		return DefaultActorService.getService();
 	}
 }

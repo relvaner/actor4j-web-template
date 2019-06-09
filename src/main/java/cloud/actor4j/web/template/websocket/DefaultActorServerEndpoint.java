@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package actor4j.web.template.websocket;
+package cloud.actor4j.web.template.websocket;
 
 import javax.websocket.server.ServerEndpoint;
 
-import actor4j.core.ActorService;
-import actor4j.web.template.startup.DefaultActorService;
-import actor4j.web.websocket.endpoints.ActorServerEndpoint;
+import cloud.actor4j.core.ActorService;
+import cloud.actor4j.web.template.startup.DefaultActorService;
+import cloud.actor4j.web.websocket.endpoints.ActorServerEndpoint;
 
 @ServerEndpoint(value = "/actor4j", configurator=DefaultWebsocketActorService.class)
 public class DefaultActorServerEndpoint extends ActorServerEndpoint {
