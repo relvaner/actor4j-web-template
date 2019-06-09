@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cloud.actor4j.web.template.rest;
+package io.actor4j.web.template.rest;
 
 import javax.ws.rs.ApplicationPath;
 
-import cloud.actor4j.core.ActorService;
-import cloud.actor4j.web.rest.server.RESTActorService;
-import cloud.actor4j.web.template.startup.DefaultActorService;
+import io.actor4j.core.ActorService;
+import io.actor4j.web.rest.server.RESTActorService;
+import io.actor4j.web.template.startup.DefaultActorService;
 
 
 @ApplicationPath("api")

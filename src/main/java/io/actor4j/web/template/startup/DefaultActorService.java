@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cloud.actor4j.web.template.startup;
+package io.actor4j.web.template.startup;
 
-import static cloud.actor4j.core.utils.ActorLogger.logger;
+import static io.actor4j.core.utils.ActorLogger.logger;
 
 import org.apache.log4j.Level;
 
-import cloud.actor4j.core.ActorService;
-import cloud.actor4j.web.websocket.WebsocketActorClientRunnable;
+import io.actor4j.core.ActorService;
+import io.actor4j.web.websocket.WebsocketActorClientRunnable;
 
 public class DefaultActorService {
 	protected static ActorService service;

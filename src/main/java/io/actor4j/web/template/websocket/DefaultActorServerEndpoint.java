@@ -13,16 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cloud.actor4j.web.template.controller;
+package io.actor4j.web.template.websocket;
 
-import cloud.actor4j.web.template.startup.DefaultActorService;
+import javax.websocket.server.ServerEndpoint;
 
-public class DefaultActorServiceController {
-	public String isOnline() {
-		return DefaultActorService.getService()!=null ? "is" : "is not";
-	}
-	
-	public String getName() {
-		return DefaultActorService.getService()!=null ? DefaultActorService.getService().getServiceNodeName() : "not available";
+import io.actor4j.core.ActorService;
+import io.actor4j.web.template.startup.DefaultActorService;
+import io.actor4j.web.websocket.endpoints.ActorServerEndpoint;
+
+@ServerEndpoint(value = "/actor4j", configurator=DefaultWebsocketActorService.class)
+public class DefaultActorServerEndpoint extends ActorServerEndpoint {
+	@Override
+	protected ActorService getService() {
+		return DefaultActorService.getService();
 	}
 }

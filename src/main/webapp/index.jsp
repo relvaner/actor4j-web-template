@@ -16,7 +16,7 @@
 		}
 	</style>
 	<body>
-		<jsp:useBean id="controller" class="cloud.actor4j.web.template.controller.DefaultActorServiceController" scope="session"/>
+		<jsp:useBean id="controller" class="io.actor4j.web.template.controller.DefaultActorServiceController" scope="session"/>
 		<h1>Actor4j - Node (<%=controller.getName()%>)</h1> 
 		<table style="margin-left:auto;margin-right:auto;">
 			<tr>
