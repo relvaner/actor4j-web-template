@@ -11,26 +11,26 @@ For further information on `Actor4j`, see the following more complete [documenta
 Following dependencies from this site are involved:
 ```xml
 		<dependency>
-			<groupId>actor4j-core</groupId>
+			<groupId>io.actor4j</groupId>
 			<artifactId>actor4j-core</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0</version>
 		</dependency>
 		<dependency>
-   			<groupId>actor4j-web-utils</groupId>
+   			<groupId>io.actor4j</groupId>
    			<artifactId>actor4j-web-utils</artifactId>
-   			<version>1.0.0</version>
+   			<version>1.1.0</version>
    		</dependency>
 		<dependency>
-   			<groupId>actor4j-web-rest-server</groupId>
+   			<groupId>io.actor4j</groupId>
    			<artifactId>actor4j-web-rest-server</artifactId>
-   			<version>1.0.0</version>
+   			<version>1.1.0</version>
    		</dependency>
    		<dependency>
-   			<groupId>actor4j-web-websocket</groupId>
+   			<groupId>io.actor4j</groupId>
    			<artifactId>actor4j-web-websocket</artifactId>
-   			<version>1.0.0</version>
+   			<version>1.1.0</version>
    		</dependency>
 ```
 
-Page to be updated 07/22/2017
+Page to be updated 01/24/2021
 

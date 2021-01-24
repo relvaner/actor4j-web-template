@@ -15,9 +15,7 @@
  */
 package io.actor4j.web.template.startup;
 
-import static io.actor4j.core.utils.ActorLogger.*;
-
-import org.apache.logging.log4j.Level;
+import static io.actor4j.core.logging.system.ActorLogger.*;
 
 import io.actor4j.core.ActorService;
 import io.actor4j.web.websocket.WebsocketActorClientRunnable;
@@ -35,8 +33,7 @@ public class DefaultActorService {
 		config(service);
 		service.setClientRunnable(new WebsocketActorClientRunnable(service.getServiceNodes(), service.getParallelismMin()*service.getParallelismFactor(), 10000));
 		
-		setLevel(Level.DEBUG);
-		logger().info(String.format("%s - Service started...", service.getName()));
+		systemLogger().info(String.format("%s - Service started...", service.getName()));
 		service.start();
 	}
 	
@@ -47,7 +44,7 @@ public class DefaultActorService {
 	public static void stop() {
 		service.shutdownWithActors(true);
 		((WebsocketActorClientRunnable)service.getClientRunnable()).closeAll();
-		logger().info(String.format("%s - Service stopped...", service.getName()));
+		systemLogger().info(String.format("%s - Service stopped...", service.getName()));
 	}
 	
 	public static ActorService getService() {
