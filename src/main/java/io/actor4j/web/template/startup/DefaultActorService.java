@@ -15,7 +15,7 @@
  */
 package io.actor4j.web.template.startup;
 
-import static io.actor4j.core.logging.system.ActorLogger.*;
+import static io.actor4j.core.logging.system.SystemActorLogger.*;
 
 import io.actor4j.core.ActorService;
 import io.actor4j.web.websocket.WebsocketActorClientRunnable;
